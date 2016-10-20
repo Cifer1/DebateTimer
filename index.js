@@ -15,7 +15,7 @@ io.on('connection', function(socket){
   console.log('a user connected');
   socket.on('new debater', function(msg){
   	debaters.set(socket.client.id, msg);
-  	// console.log(socket.client.id, msg)
+  	console.log(socket.client.id, msg)
   })
   socket.on('start', function(msg){
   	start(msg);
