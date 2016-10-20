@@ -24,19 +24,18 @@
 		<button id="negprep"> Neg Prep </button>
 		<div id="timer"></div>	
 		<ul id="messages"></ul>
-		<div id="modal1" class="modal">
-	      <div class="modal-content">
-	        <form id="name_form" >
-	          What is your name?
-	          <br />
-	          <input type="text" id="name" autocomplete = "off" autofocus="autofocus" onfocus="this.select()">
-	          <!-- <input type="submit" value="Done"> -->
-	        </form>
-	      </div>
-	      <div class="modal-footer">
-	        <a href="#" id="submit_button" class="modal-action modal-close waves-effect waves-green btn-flat">Done</a>
-	      </div>
-	    </div>		
+		<div id="modal1" class="modal open" style="z-index: 1003; display: block; opacity: 1; transform: scaleX(1); top: 10%;">
+      <div class="modal-content">
+        <form id="name_form">
+          What is your name?
+          <br>
+          <input type="text" id="name" autocomplete="off" autofocus="autofocus" onfocus="this.select()">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#" id="submit_button" class="modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+      </div>
+    </div>	
 	</div>
 
 	<script>
